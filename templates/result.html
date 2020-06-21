@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统计结果</title>
+</head>
+<body>
+    <h1 style="text-align: center">统计结果为{{num_sum}}字</h1>
+    <h1 style="text-align: center">内容为:{{text}}</h1>
+    <br>
+    <h3>字典={{ dict }}</h3>
+    <br>
+    <h3>排序={{ sorted }}</h3>
+    <h3>出现频率统计</h3>
+    {% for word, count in sorted %}
+        {{ word }} : {{ count }}
+        <br>
+
+
+    {% endfor %}
+
+
+</body>
+</html>
