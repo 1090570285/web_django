@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', function.home),
     path('result', function.result),
+    path('about', function.about),
 ]

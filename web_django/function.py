@@ -23,3 +23,7 @@ def result(request):
                   {'num_sum' : count_sum , 'text': user_text,
                    'dict': word_dict,
                    'sorted':sorted_dict})
+
+def about(request):
+    # return HttpResponse('李宝华')
+    return render(request, 'about.html')
